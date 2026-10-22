@@ -1,0 +1,354 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Menkapian | Coffee & Co.</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/css.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-dark coffee-navbar sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="brand-icon">☕</span> menkapian<span class="brand-dot">.</span>
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav mx-auto mb-3 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Our Story</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+
+                <a href="#menu" class="btn btn-coffee">Explore Menu ↗</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- HERO CAROUSEL -->
+    <header id="coffeeCarousel"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+        data-bs-interval="5000">
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#coffeeCarousel"
+                data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+
+            <button type="button" data-bs-target="#coffeeCarousel"
+                data-bs-slide-to="1" aria-label="Slide 2"></button>
+
+            <button type="button" data-bs-target="#coffeeCarousel"
+                data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="Images/hero.jpg"
+                    class="hero-image" alt="Freshly brewed coffee">
+                <div class="hero-overlay"></div>
+
+                <div class="carousel-caption hero-caption">
+                    <span class="eyebrow">YOUR DAILY COFFEE RITUAL</span>
+                    <h1>Good coffee.<br><span>Better moments.</span></h1>
+                    <p>Slow down, take a sip, and make today a little warmer.</p>
+                    <a href="#menu" class="btn btn-coffee btn-lg">
+                        Discover Our Coffee
+                    </a>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="Images/coffee-machine-filling-two-cups-time.jpg"
+                    class="hero-image" alt="Coffee served with roasted coffee beans">
+                <div class="hero-overlay"></div>
+
+                <div class="carousel-caption hero-caption">
+                    <span class="eyebrow">BREWED WITH CARE</span>
+                    <h1>A little warmth<br><span>in every cup.</span></h1>
+                    <p>Rich flavors, comforting aromas, and your favorite café moments.</p>
+                    <a href="#menu" class="btn btn-coffee btn-lg">
+                        Find Your Favorite
+                    </a>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="Images/coffee-machine-filling-two-cups-time.jpg"
+                    class="hero-image" alt="Coffee being freshly prepared">
+                <div class="hero-overlay"></div>
+
+                <div class="carousel-caption hero-caption">
+                    <span class="eyebrow">MADE FOR COFFEE LOVERS</span>
+                    <h1>Your favorite cup.<br><span>Your happy place.</span></h1>
+                    <p>From your first morning sip to your afternoon pick-me-up.</p>
+                    <a href="#menu" class="btn btn-coffee btn-lg">
+                        Browse the Menu
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button"
+            data-bs-target="#coffeeCarousel" data-bs-slide="prev"
+            aria-label="Previous slide">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button"
+            data-bs-target="#coffeeCarousel" data-bs-slide="next"
+            aria-label="Next slide">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </header>
+
+
+    <!-- INTRODUCTION -->
+    <section class="intro-section">
+        <div class="container text-center">
+            <span class="eyebrow">WELCOME TO MENKAPIAN</span>
+            <h2>Made for your <span>coffee moments.</span></h2>
+            <p>
+                Your cozy corner for rich coffee, lovely flavors,
+                and little moments worth slowing down for.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- COFFEE MENU -->
+    <section class="menu-section" id="menu">
+        <div class="container">
+
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">A CUP FOR EVERY MOOD</span>
+                    <h2>Our <span>favorites.</span></h2>
+                </div>
+
+                <a href="products.html" class="text-link">
+                    View Full Menu ↗
+                </a>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- PRODUCT 1 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <article class="product-card">
+                        <div class="product-image-wrap">
+                            <span class="product-tag">BESTSELLER</span>
+                            <img
+                                src="Images/classic-cappuccino.jpg"
+                                alt="Classic cappuccino"
+                                class="product-image">
+                        </div>
+
+                        <div class="product-info">
+                            <div class="product-title-row">
+                                <h3>Classic Cappuccino</h3>
+                                <span class="product-price">₱120</span>
+                            </div>
+                            <p>Bold espresso topped with silky steamed milk and a cloud of foam.</p>
+                            <a href="products.html" class="product-link">
+                                Order now <span>↗</span>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- PRODUCT 2 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <article class="product-card">
+                        <div class="product-image-wrap">
+                            <span class="product-tag">HOUSE FAVORITE</span>
+                            <img
+                                src="Images/salted caramel.jpg"
+                                alt="Salted caramel coffee"
+                                class="product-image">
+                        </div>
+
+                        <div class="product-info">
+                            <div class="product-title-row">
+                                <h3>Salted Caramel</h3>
+                                <span class="product-price">₱145</span>
+                            </div>
+                            <p>Smooth coffee blended with buttery caramel and a hint of sea salt.</p>
+                            <a href="products.html" class="product-link">
+                                Order now <span>↗</span>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- PRODUCT 3 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <article class="product-card">
+                        <div class="product-image-wrap">
+                            <img
+                                src="Images/americano.jpg"
+                                alt="Freshly brewed Americano"
+                                class="product-image">
+                        </div>
+
+                        <div class="product-info">
+                            <div class="product-title-row">
+                                <h3>Classic Americano</h3>
+                                <span class="product-price">₱100</span>
+                            </div>
+                            <p>Rich espresso and hot water for a clean, bold, satisfying sip.</p>
+                            <a href="products.html" class="product-link">
+                                Order now <span>↗</span>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- PRODUCT 4 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <article class="product-card">
+                        <div class="product-image-wrap">
+                            <img
+                                src="Images/icedlatte.avif"
+                                alt="Iced coffee in a glass"
+                                class="product-image">
+                        </div>
+
+                        <div class="product-info">
+                            <div class="product-title-row">
+                                <h3>Iced Latte</h3>
+                                <span class="product-price">₱130</span>
+                            </div>
+                            <p>Chilled espresso and creamy milk over ice. Cool, smooth, and refreshing.</p>
+                            <a href="products.html" class="product-link">
+                                Order now <span>↗</span>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- PRODUCT 5 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <article class="product-card">
+                        <div class="product-image-wrap">
+                            <span class="product-tag">SWEET & CREAMY</span>
+                            <img
+                                src="Images/vanilla.jpg"
+                                alt="Creamy latte with milk foam"
+                                class="product-image">
+                        </div>
+
+                        <div class="product-info">
+                            <div class="product-title-row">
+                                <h3>Vanilla Latte</h3>
+                                <span class="product-price">₱140</span>
+                            </div>
+                            <p>Espresso, velvety milk, and a gentle touch of sweet vanilla.</p>
+                            <a href="products.html" class="product-link">
+                                Order now <span>↗</span>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- PRODUCT 6 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <article class="product-card">
+                        <div class="product-image-wrap">
+                            <img
+                                src="Images/mocha.jpg"
+                                alt="Creamy blended coffee drink"
+                                class="product-image">
+                        </div>
+
+                        <div class="product-info">
+                            <div class="product-title-row">
+                                <h3>Mocha Frappe</h3>
+                                <span class="product-price">₱155</span>
+                            </div>
+                            <p>A chilled chocolate-coffee blend finished with a creamy touch.</p>
+                            <a href="products.html" class="product-link">
+                                Order now <span>↗</span>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CLOSING BANNER -->
+    <section class="coffee-banner">
+        <div class="container">
+            <span class="eyebrow">YOUR NEXT FAVORITE IS WAITING</span>
+            <h2>Life happens.<br><span>Coffee helps.</span></h2>
+            <p>Find your favorite flavor and make room for a little pause.</p>
+            <a href="products.html" class="btn btn-coffee btn-lg">
+                Explore All Drinks ↗
+            </a>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <a class="footer-brand" href="index.html">☕ menkapian.</a>
+            <p>Good coffee, good company, good moments.</p>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="products.html">Menu</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <p class="copyright">
+                © 2026 Menkapian. Made with love and coffee.
+            </p>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
